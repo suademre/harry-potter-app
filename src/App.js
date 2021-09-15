@@ -10,11 +10,14 @@ function App() {
       <Header />
       {data.map((character) => (
         <Card
+          key={character.name}
           characterName={character.name}
           house={character.house}
           imgUrl={character.image}
           actor={character.actor}
-          key={character.name}
+          gender={character.gender}
+          birthday={character.dateOfBirth}
+          yearOfBirth={character.yearOfBirth}
         />
       ))}
 
