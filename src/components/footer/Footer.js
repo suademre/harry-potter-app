@@ -3,13 +3,13 @@ import "./Footer.css";
 function Footer() {
   return (
     <footer className="footer">
-      <button>
+      <button aria-label="nav_footer">
         <i className="fas fa-home"></i>
       </button>
-      <button>
+      <button aria-label="nav_footer">
         <i className="far fa-heart"></i>
       </button>
-      <button>
+      <button aria-label="nav_footer">
         <i className="fas fa-cogs"></i>
       </button>
     </footer>

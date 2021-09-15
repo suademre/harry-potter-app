@@ -1,4 +1,4 @@
-import "./Main.css";
+import "./Card.css";
 
 function tellColorName(house) {
   /* house.forEach(house => {
@@ -22,18 +22,10 @@ function tellColorName(house) {
 function Main({ characterName, house, imgUrl, actor }) {
   const color = tellColorName(house);
   console.log("color : " + color);
-  /* const herryName = "Herry Poter";
-  const herryActor = "Daniel Radcliffe";
-  const harryImgae = "http://hp-api.herokuapp.com/images/harry.jpg";
-
-  const hermioneName = "Hermione Granger";
-  const hermioneActor = "Emma Watson";
-  const hermioneImg = "http://hp-api.herokuapp.com/images/hermione.jpeg"; */
 
   return (
     <>
-      <main>
-        {/* {data.map((d, key) => ( */}
+      <div className="character__card">
         <section className="card">
           <div className="card__img">
             <img className="card__img__tag" src={imgUrl} alt={characterName} />
@@ -45,8 +37,7 @@ function Main({ characterName, house, imgUrl, actor }) {
             <button className="more">More</button>
           </div>
         </section>
-        {/* ))} */}
-      </main>
+      </div>
     </>
   );
 }
